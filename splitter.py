@@ -59,7 +59,7 @@ for index, row in df.iterrows():
             newDf = pd.concat([dictHelper(game), append])
             dictUpdater(game, newDf)
 
-writer = pd.ExcelWriter("2024SortedTeams.xlsx")
+writer = pd.ExcelWriter("SortedTeams.xlsx")
 
 for k, v in hdict.items():
     newKey = re.sub('[^A-Za-z0-9 ]+', "", k)
